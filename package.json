@@ -1,23 +1,5 @@
 {
-  "name": "group-project-activity-full-stack-application-development",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jeh7/Group-Project-Activity-Full-Stack-Application-Development.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jeh7/Group-Project-Activity-Full-Stack-Application-Development/issues"
-  },
-  "homepage": "https://github.com/Jeh7/Group-Project-Activity-Full-Stack-Application-Development#readme",
-  "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "@angular/router": "^19.2.5"
   }
 }
