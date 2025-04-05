@@ -1,0 +1,23 @@
+<div class="profile">
+    <h2>Profile Management</h2>
+    <form (ngSubmit)="updateProfile()">
+      <div>
+        <label for="username">Username</label>
+        <input id="username" [(ngModel)]="profile.username" name="username" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" [(ngModel)]="profile.email" name="email" required />
+      </div>
+      <div>
+        <label for="firstName">First Name</label>
+        <input id="firstName" [(ngModel)]="profile.firstName" name="firstName" />
+      </div>
+      <div>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" [(ngModel)]="profile.lastName" name="lastName" />
+      </div>
+      <button type="submit">Update Profile</button>
+    </form>
+  </div>
+  
