@@ -20,7 +20,7 @@ module.exports = {
     getById,
     create,
     update,
-    delete: _delete
+    //delete: _delete
 };
 
 async function authenticate({ email, password, ipAddress }) {
@@ -199,10 +199,12 @@ async function update(id, params) {
     return basicDetails(account);
 }
 
+/*
 async function _delete(id) {
     const account = await getAccount(id);
     await account.destroy();
 }
+*/
 
 // helper functions
 
