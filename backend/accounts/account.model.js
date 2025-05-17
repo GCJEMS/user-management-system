@@ -1,4 +1,5 @@
 const { DataTypes } = require('sequelize');
+
 module.exports = model;
 
 function model(sequelize) {
@@ -12,14 +13,16 @@ function model(sequelize) {
         role: { type: DataTypes.STRING, allowNull: false },
         verificationToken: { type: DataTypes.STRING },
         verified: { type: DataTypes.DATE },
-        resetToken: { type: DataTypes.DATE },
+        resetToken: { type: DataTypes.STRING },
         resetTokenExpires: { type: DataTypes.DATE },
+        isActive: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: true },
         passwordReset: { type: DataTypes.DATE },
         created: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW },
         updated: { type: DataTypes.DATE },
         isVerified: {
             type: DataTypes.VIRTUAL,
-            get() { return !!(this.verified || this.passwordReset); }
+            get() { return true; }
+
         }
     };
 
